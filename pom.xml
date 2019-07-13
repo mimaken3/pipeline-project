@@ -15,7 +15,6 @@
 	<name>pipeline-project</name>
 	<description>Demo project for Spring Boot</description>
 
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -65,6 +64,10 @@
 		<junit.version>4.12</junit.version>
 		<easymock.version>3.4</easymock.version>
 
+		<!-- JaCoCo Properties -->
+		<jacoco-maven.version>0.7.9</jacoco-maven.version>
+		<jacoco.include.package>**/*</jacoco.include.package>
+
 	</properties>
 
 	<build>
@@ -72,6 +75,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+			<!-- Build Configuration for JaCoCo -->
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>${jacoco-maven.version}</version>
 			</plugin>
 		</plugins>
 	</build>
