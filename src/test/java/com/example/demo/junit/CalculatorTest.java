@@ -9,7 +9,7 @@ public class CalculatorTest {
 
 	@Test
 	public void divideで3と2の除算結果が取得できる() throws Exception {
-		assertThat(Calculator.divide(3, 2), is(1.5));
+		assertThat(Calculator.divide(3, 1), is(1.5));
 	}
 
 	@Test
