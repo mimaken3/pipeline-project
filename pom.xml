@@ -68,6 +68,12 @@
 		<jacoco-maven.version>0.7.9</jacoco-maven.version>
 		<jacoco.include.package>**/*</jacoco.include.package>
 
+		<!-- Checkstyle Properties -->
+		<maven-checkstyle.version>2.17</maven-checkstyle.version>
+
+		<!-- Findbugs Properties -->
+		<findbugs-maven.version>3.0.4</findbugs-maven.version>
+
 	</properties>
 
 	<build>
@@ -82,6 +88,20 @@
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>${jacoco-maven.version}</version>
+			</plugin>
+
+			<!-- Build Configuration for Checkstyle -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>${maven-checkstyle.version}</version>
+			</plugin>
+
+			<!-- Build Configuration for Findbugs -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+				<version>${findbugs-maven.version}</version>
 			</plugin>
 		</plugins>
 	</build>
