@@ -117,7 +117,7 @@
 				<version>${findbugs-maven.version}</version>
 			</plugin>
 		</plugins>
-		<finalName>web</finalName>
+		<finalName>project</finalName>
 	</build>
 
 </project>
