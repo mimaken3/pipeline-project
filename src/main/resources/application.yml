@@ -10,4 +10,4 @@ spring:
     password: mimaken0930
 server:
   servlet:
-    context-path: /web
+    context-path: /project
